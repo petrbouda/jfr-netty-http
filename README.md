@@ -62,7 +62,7 @@ Add GITHUB repository to your settings.xml
         <server>
             <id>jfr-netty-http</id>
             <username>petrbouda</username>
-            <password>23587653b547d2f96652514197b1f0a67cc117b6</password>
+            <password>{access-token}</password>
         </server>
     </servers>
 </settings>
