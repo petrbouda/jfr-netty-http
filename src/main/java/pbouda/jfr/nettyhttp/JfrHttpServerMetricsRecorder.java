@@ -12,6 +12,7 @@ public class JfrHttpServerMetricsRecorder implements HttpServerMetricsRecorder {
 
     @Override
     public void recordDataReceivedTime(String uri, String method, Duration time) {
+        exchangeEvent.begin();
         exchangeEvent.uri = uri;
         exchangeEvent.method = method;
         exchangeEvent.dataReceivedTime = time.toNanos();
